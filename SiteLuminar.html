@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Navbar Luminar</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./SiteLuminar.css">
+
+  <style>
+    img {
+      width: 100%;
+      height: 33rem;
+    }
+
+    body {
+      height: 1500px;
+    }
+
+    .modal-content {
+      padding-left: 7rem;
+      padding-right: 7rem;
+    }
+
+    #course {
+      border: none;
+    }
+
+    /* .carousal-inner{
+    text-align: left;
+  } */
+  </style>
+
+</head>
+
+<body>
+
+
+  <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./Images/logo luminar.jpeg">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item" ;>
+            <a class="nav-link active" style="rgb(122, 8, 148);" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Placements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+
+
+    <!-- to add images there have 2 images------- -->
+    <div class="carousel-inner">
+      <!-- first image-- -->
+      <div class="carousel-item active" data-bs-interval="1000">
+        <img src="./Images/luminarBGimage1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+
+          <div id="d1">
+            <h1>Data Science, ML & AI
+              <br>
+              Big Data - Hadoop & Spark
+              <br>
+              Python Data Science
+            </h1>
+            <br>
+
+            <p>We LUMINAR TECHNOLAB offers best software training and placement in emerging technologies like Big Data,
+              Hadoop, Spark,Data Scince, Machine Learning, Deep Learning and AI.</p>
+
+            <button type="button" class="btn" style="background-color: rgb(122, 8, 148); color:white; --bs-btn-padding-y:2rem; --bs-btn-padding-x:2.5rem;;">VIEW COURSES</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- second image -->
+
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="./Images/luminarBGimage2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <div id="d1">
+            <h1>
+              Kerala's No.1 IT Finishing School
+              <br>
+              100% Placement Assistance
+            </h1>
+
+            <br>
+
+            <p>We at LUMINAR TECHNOLAB offers best software training and placement in emerging technologies like BIG
+              DATA, Data Science, Machine Learning,PYTHON, Software Testing.</p>
+
+            <br><br>
+            <button type="button" class="btn" style="background-color: rgb(122, 8, 148); color:white; --bs-btn-padding-y:2rem; --bs-btn-padding-x:2.5rem;">VIEW COURSES</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ---------for the control buttons. Dont make any change in code--------------- -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn" style="background-color: purple; color:white;" data-bs-toggle="modal"
+    data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- ---created a <div class="row"> to make the close button and heading to smae line -->
+          <br><br>
+          <div class="row">
+            <div class="col-sm-11 col-12">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Get Training Quote for free</h1>
+            </div>
+
+            <div class="col-sm-1 col-12">
+              <button type="button" class="btn-close btn-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+          </div>
+          <!-------------end of heading section------------------- -->
+          <br><br>
+          <!-- ---------------creating form---------------------------- -->
+
+          <form style="border:none">
+            <input type="text" placeholder="Name" style="border:none">
+            <hr>
+
+            <input type="text" placeholder="Email" style="border:none">
+            <hr>
+
+            <input type="text" placeholder="Phone Number" style="border:none">
+            <hr>
+
+            <select name="course" id="course">
+              <option value="">Select Course interested in</option>
+              <option value="Data Science - ML - AI - Big Data with Cloud & Tableau">Data Science - ML - AI - Big Data
+                with Cloud & Tableau</option>
+              <option value="Python Django - Angular- Full Stack Web Development Expert">Python Django - Angular- Full
+                Stack Web Development Expert</option>
+              <option value="Software Testing Specialist">Software Testing Specialist</option>
+              <option value="MEARN Stack Web Development Expert - Angular & React">MEARN Stack Web Development Expert -
+                Angular & React</option>
+              <option value="Business Analytics - Power BI & Tableau">Business Analytics - Power BI & Tableau</option>
+              <option value="Android Developer Expert Training In Kochi- Flutter">Android Developer Expert Training In
+                Kochi- Flutter</option>
+              <option value="PYTHON -DATA SCIENCE with ML - AI - & TABLEAU">PYTHON -DATA SCIENCE with ML - AI - &
+                TABLEAU</option>
+            </select>
+            <hr>
+            <input type="text" placeholder="City" style="border:none">
+            <hr>
+            <textarea name="comment" cols="80" rows="5" placeholder="Comments" style="border:none"></textarea>
+            <hr>
+
+          </form>
+          <!-- ---------------------end of the form ------------ -->
+
+          <!-- ------------created submit button ---------- -->
+          <button type="button" class="btn" style="background-color: purple; color:white;">Submit</button>
+          <!-- ----end of submit button------- -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

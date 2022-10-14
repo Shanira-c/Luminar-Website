@@ -1,0 +1,23 @@
+.navbar-brand img{
+   height: 75px;
+   width: 300px;
+}
+.nav-item{
+   font-weight: bold;
+}
+#d1{
+   width:40rem;
+   height:30rem;
+   padding-top:5rem;
+  text-align: left;
+}
+#d1 h1{
+   font-size: 3rem;
+   
+}
+#d1 button{
+   font-weight:bold;
+   border-radius:50px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
